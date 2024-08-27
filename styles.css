@@ -1,0 +1,761 @@
+/* General Styles */
+@font-face {
+    font-family: 'Moderustic';
+    src: url('/font/Moderustic-Medium-BF660f6f56521a7.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Moderustic', sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Navbar Styles */
+.navbar-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(355, 355, 355, 0.8);
+    box-shadow: none;
+}
+
+.navbar-brand .logo {
+    height: 30px;
+}
+
+/* Search Bar and Buttons Styles */
+.header-options {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.business-input,
+.location-input {
+    border: none;
+    padding: 3px 5px;
+    font-size: 12px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.location-input {
+    color: grey;
+}
+
+.separator {
+    border-left: 1px solid black;
+    height: 15px;
+    margin: 0 3px;
+}
+
+.search-button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+.search {
+    margin-bottom: 5px;
+}
+
+.header-button {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 3px 10px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-options .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.ms-3 {
+    margin-left: 0 !important;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.nav-links img {
+    margin-bottom: 3px;
+    height: 20px;
+}
+
+
+
+
+/* Styling for the hero image */
+.hero-image {
+    width: 100%; /* Make the image take up full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+   
+}
+.hero{
+    position: relative;
+    height: 100vh; /* Full viewport height for hero section */
+    display: flex;
+}
+#hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* No background image here */
+}
+
+/* Pseudo-element for background image */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('asset/home.jpg') center/cover no-repeat;
+    animation: float 4s ease-in-out infinite;
+    z-index: -1; /* Ensure the image is behind the content */
+}
+
+/* Keyframes for the float animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px); /* Move image up */
+    }
+    100% {
+        transform: translateY(0px); /* Return to original position */
+    }
+}
+
+.hero-content {
+    position: relative; /* Ensure content is above the background image */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+}
+
+/* Other CSS styles */
+.hero-text-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 85%;
+    max-width: 650px;
+}
+
+.hero-text h2 {
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.hero-text .coming-2024 {
+    font-size: 0.8em;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .hero-text-container {
+        margin-top: 15px;
+        padding: 10px;
+        width: 88%;
+        max-width: 500px;
+    }
+
+    .hero-text h2 {
+        font-size: 0.8em; /* Further reduce font size */
+    }
+
+    .hero-text .coming-2024 {
+        font-size: 0.8em; /* Further reduce font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text-container {
+        margin-top: 15px;
+        padding: 10px;
+        width: 88%;
+        max-width: 500px;
+    }
+
+    .hero-text h2 {
+        font-size: 0.8em; /* Further reduce font size */
+    }
+
+    .hero-text .coming-2024 {
+        font-size: 0.8em; /* Further reduce font size */
+    }
+}
+
+
+.center-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+
+.powered-by {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.powered-by .highlight {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-column {
+    width: 30%;
+}
+
+.feature-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-column li {
+    margin-bottom: 8px;
+}
+
+.cta-buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 5%;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.cta-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+.blue {
+    color: #007bff !important;
+}
+
+.tick {
+    color: #e74c3c !important;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.extra-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.be-a-star {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.options-list {
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.options-list li {
+    font-weight: normal;
+    margin-left: 20px;
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+
+
+
+/*--NEWS SECtION DESIGN*/
+.news {
+
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.news-content-section {
+    padding: 20px;
+    text-align: left;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.news-title-subtitle {
+    flex-grow: 1;
+}
+
+.news-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.news-subtitle {
+    color: #666;
+}
+
+.news-btn {
+    text-align: right;
+}
+
+.news-cta {
+    text-align: right;
+}
+
+.news-cta p {
+    color: #999;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.news-sign-up-btn {
+    background-color: #ffde00;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.news-description {
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .news-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news-cta {
+        text-align: left;
+    }
+
+    .news-sign-up-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* Advertise section */
+.column {
+    margin-left: -2%;
+}
+
+.advertise {
+    margin-top: 50px;
+}
+
+.rounded-image {
+    border-radius: 10px;
+}
+
+.news-section {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.news-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.news-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.news-list li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.news-list i {
+    color: #28a745;
+    margin-right: 10px;
+}
+
+.news-cta {
+    background-color: #ffde00;
+    font-weight: bold;
+    color: #333;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.news-cta:hover {
+    background-color: #ffcd00;
+}
+
+.news-section:nth-child(2) {
+    background-color: #f5fdf5;
+}
+
+.enhanced-height {
+    height: 500px;
+    object-fit: cover;
+}
+
+/*--FOOTER CSS--*/
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: #bdbdbd;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #bdbdbd;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+/*---updated design for sign up--*/
+
+.signUp-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.signUp-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.signUp-imageWrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signUp-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.signUp-card h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.signUp-card p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #555;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+.signUp-imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+
+    .signUp-imageWrapper img,
+    .signUp-card {
+        height: 350px;
+    }
+}
+
+.btn-warning {
+    background-color: #fdd835;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-SignUp-options {
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+.text-style {
+    font-size: 13px !important;
+}
+
+.text {
+    font-size: 13px !important;
+    font-weight: bold !important;
+}
+
+.icon{
+    margin-bottom: 5px !important;
+
+}
+
+/*- Animations-*/
+
+/* Initial state before the element comes into view */
+.fade-in-left, .fade-in-right {
+    opacity: 0;
+    transform: translateX(-50px); /* Left shift for left fade-in */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    visibility: hidden;
+}
+
+.fade-in-right {
+    transform: translateX(50px); /* Right shift for right fade-in */
+}
+
+/* State when the element is in view */
+.in-view {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}
+
+/* Initial state before the element comes into view */
+.news-pop-up-bottom {
+    opacity: 0;
+    transform: translateY(50px); /* Start with a shift down */
+    transition: opacity 2.5s ease-out, transform 2.5s ease-out;
+    visibility: hidden;
+}
+
+/* State when the element is in view */
+.news-in-view {
+    opacity: 1;
+    transform: translateY(0); /* Element is in its final position */
+    visibility: visible;
+}
+
+/* Initial state before the element comes into view */
+.hero-content-right-to-left {
+    opacity: 0;
+    transform: translateX(250px); /* Start off-screen to the right */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    visibility: hidden;
+}
+
+/* State when the element is in view */
+.hero-content-in-view {
+    opacity: 1;
+    transform: translateX(0); /* Move to its final position */
+    visibility: visible;
+}
+
+/* Zoom effect for images */
+.hover-zoom img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-zoom:hover img {
+    transform: scale(1.1); /* Slightly zoom in the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+}
+
+/* Border shade effect for cards */
+.hover-shade {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-shade:hover {
+    transform: scale(1.05); /* Slightly zoom the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+}
+
+/* General styles for buttons */
+.cta-buttons-container .cta-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+/* Smaller screen styles */
+@media (max-width: 768px) {
+    .cta-buttons-container .cta-btn {
+        font-size: 0.875rem; /* Reduce font size */
+        padding: 8px 16px; /* Reduce padding */
+        margin: 4px; /* Reduce margin */
+    }
+}
+
+@media (max-width: 576px) {
+    .cta-buttons-container .cta-btn {
+        font-size: 0.75rem; /* Further reduce font size */
+        padding: 6px 12px; /* Further reduce padding */
+        margin: 2px; /* Further reduce margin */
+    }
+
+    .cta-buttons {
+        flex-wrap: wrap; /* Allow buttons to wrap if necessary */
+    }
+}

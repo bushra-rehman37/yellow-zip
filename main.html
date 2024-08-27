@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="script.js"> </script>
+    <link rel="stylesheet" href="styles.css">
+    <title>YellowZip</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom position-absolute">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a href="#" class="navbar-brand">
+                <img src="asset/Logo (2).png" alt="YellowZip Logo" class="logo">
+            </a>
+
+            <!-- Menu Toggle Button for Small Screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Content -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <form class="d-flex">
+                    <!-- Search Bar and Buttons -->
+                    <div class="header-options d-none d-lg-flex">
+                        <div class="search-bar">
+                            <div class="input-group">
+                                <input type="text" placeholder="Car Detailer Biz" class="business-input">
+                                <span class="separator"></span>
+                                <button class="search-button">
+                                    <img src="asset/Vector-7.png" alt="search" class="search">
+                                </button>
+                                <input type="text" placeholder="Houston, TX 77077" class="location-input">
+                                <button class="search-button">
+                                    <img src="asset/Vector-6.png" alt="search" class="search">
+                                </button>
+                            </div>
+                        </div>
+                        <!-- "About" and "Advertise" Buttons within the same header-options div -->
+                        <div class="buttons">
+                            <button class="btn btn-outline-secondary header-button">About</button>
+                            <button class="btn btn-outline-secondary header-button ms-2">Advertise</button>
+                        </div>
+                    </div>
+                </form>
+                
+
+                <!-- Custom Navigation Links with Icons -->
+                <ul class="navbar-nav ms-auto nav-links">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="asset/Vector-4.png" alt="News"><span>Neighborly News</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="asset/Vector-5.png" alt="Directory"><span>Directory</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="asset/Vector.png" alt="Deals"><span>Ask a Pro</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="asset/Vector-3.png" alt="Jobs"><span>Jobs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="asset/Vector-2.png" alt="Biz for Sale"><span>Biz for Sale</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="asset/Vector-1.png" alt="Fund Me"><span>Fund Me</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="asset/Vector.png" alt="Deals"><span>Deals</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Area -->
+    <section id="hero">
+        <div class="hero-content container-fluid hero-content-right-to-left">
+            <div class="hero-text-container animate__animated">
+                <div class="hero-text">
+                    <h2>An Open Honest Neighborhood Platform <span class="coming-2024">Coming 2024</span></h2>
+                </div>
+            </div>
+            <div class="center-content">
+                <div class="powered-by">
+                    <p>Powered by<br> <span class="highlight">Neighborhood Stars That Truly Care</span></p>
+                </div>
+                <div class="features">
+                    <div class="feature-column">
+                        <ul>
+                            <li class="blue">Neighborhood News</li>
+                            <li class="tick"><img src="asset/Tick.png" alt="Icon" class="icon"> School happenings</li>
+                            <li class="tick"> <img src="asset/Tick.png" alt="Icon" class="icon"> Advice</li>
+                            <li class="tick"> <img src="asset/Tick.png" alt="Icon" class="icon"> Events</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <ul>
+                            <li class="blue">Small Business Directory</li>
+                            <li class="tick"> <img src="asset/Tick.png" alt="Icon" class="icon"> 400+ Categories</li>
+                            <li class="tick"> <img src="asset/Tick.png" alt="Icon" class="icon"> Free Listing</li>
+                            <li class="tick"> <img src="asset/Tick.png" alt="Icon" class="icon"> Most Liked</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <ul>
+                            <li class="blue">Ask a Pro</li>
+                            <li class="tick"> <img src="asset/Tick.png" alt="Icon" class="icon"> Business Leads-Bids</li>
+                            <li class="tick"> <img src="asset/Tick.png" alt="Icon" class="icon"> 400+ Categories</li>
+                            <li class="tick"> <img src="asset/Tick.png" alt="Icon" class="icon"> Neighborhood Comments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-buttons-container">
+                <div class="cta-buttons">
+                    <button class="cta-btn">Star Sign In</button>
+                    <button class="cta-btn">Star Sign In</button>
+                    <button class="cta-btn">Star Program</button>
+                </div>
+            </div>
+    
+            <div class="extra-content">
+                <p class="be-a-star">Be a Star</p>
+                <ul class="options-list">
+                    <li>Real Estate Agent</li>
+                    <li>Insurance</li>
+                    <li>Finance</li>
+                    <li>Beauty</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+<!-- Sign Up Options -->
+
+    <div class="container my-5">
+        <section class="signUp-section text-center ">
+            <h2>Three Sign-Up Options</h2>
+            <p>Something for Everyone</p>
+    
+            <div class="row mb-4 align-items-stretch">
+                <div class="col-md-7 mb-4 mb-md-0  fade-in-right hover-zoom">
+                    <div class="signUp-imageWrapper">
+                        <img src="asset/Rectangle-4.jpg" alt="For Neighbors" class="img-fluid hover-zoom">
+                    </div>
+                </div>
+                <div class="col-md-5 fade-in-left hover-shade">
+                    <div class="signUp-card p-4 d-flex flex-column text-start" style="background-color: #FFF4E6;"> <!-- Light peach color -->
+                        <div class="mt-4"> 
+                        <h2>For Neighbors</h2>
+                        <p class="text-style">Explore a vast array of over 400 categories and interests, all conveniently located nearby for your browsing pleasure.</p>
+                        
+                        <div class="d-flex align-items-center mb-3 ">
+                            <img src="asset/Rectangle-1.png" alt="Icon" class="icon me-2">
+                            <p class="mb-0 icon-text text">Sign up for neighborhood news tailored to your interests.</p>
+                        </div>
+                        <button class="btn btn-warning mt-auto align-self-start btn-SignUp-options">Sign Up</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mb-4 align-items-stretch">
+                <div class="col-md-7 order-md-2 mb-4 mb-md-0 fade-in-right hover-zoom">
+                    <div class="signUp-imageWrapper">
+                        <img src="asset/Rectangle-3.jpg" alt="For Businesses" class="img-fluid hover-zoom">
+                    </div>
+                </div>
+                <div class="col-md-5 order-md-1 fade-in-left hover-shade">
+                    <div class="signUp-card p-4 d-flex flex-column text-start" style="background-color: #E8F7E7;"> <!-- Light mint color -->
+                        <div class="mt-4"> 
+                        <h2 >For Businesses</h2>
+                        <p class="text-style">Add your business to a modern-day local directory offering affordable leads and social engagement in our Neighborhood News program.</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="asset/Rectangle.png" alt="Icon" class="icon me-2">
+                            <p class="mb-0 icon-text text">The same control panel for a home-based business as a national business. Grow customers near you. FREE Listing.</p>
+                        </div>
+                        <button class="btn btn-warning mt-auto align-self-start btn-SignUp-options">Sign Up</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row align-items-stretch">
+                <div class="col-md-7 mb-4 mb-md-0 fade-in-right hover-zoom">
+                    <div class="signUp-imageWrapper">
+                        <img src="asset/Rectangle-2.jpg" alt="For Agencies & Multi Brands" class="img-fluid hover-zoom">
+                    </div>
+                </div>
+                <div class="col-md-5 fade-in-left hover-shade">
+                    <div class="signUp-card p-4 d-flex flex-column text-start" style="background-color: #E6F0FF;"> <!-- Pastel color -->
+                        <div class="mt-4">
+                            <h2>For Agencies & Multi Brands</h2>
+                        <p class="text-style">A single dashboard to centralize and oversee multiple brands and clients. Bring your clients on board with YellowZip and empower them to connect with their local community.</p>
+                        <button class="btn btn-warning mt-auto align-self-start btn-SignUp-options">Sign Up</button>
+                    
+                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    </div>
+
+<!---NEWS-->
+<section> 
+    <div class="news container news-pop-up-bottom">
+        <div class="news-image-section hover-zoom">
+            <img src="asset/Rectangle-1.jpg" alt="Food Delivery">
+        </div>
+        <div class="news-content-section">
+            <div class="news-header">
+                <div class="news-title-subtitle">
+                    <h2 class="news-title">Neighborly News</h2>
+                    <p class="news-subtitle">Get the neighborhood scoop here.</p>
+                </div>
+                <div class="news-btn">
+                    <button class="btn btn-warning news-cta btn-SignUp-options">Sign Up</button>
+                    <p>You need to be an authorized user to post</p>
+                    
+                </div>
+            </div>
+            <p class="news-description">
+                Free speech, no bullying, weekly world events, local events, school updates, advice, photos, lost and found,
+                'no negatives' zone, 'comment freely' zone, no mention of businesses (that's why we have a free Directory), and no ads.
+                Ask, comment, engage, learn and have fun.
+            </p>
+        </div>
+    </div>
+    
+</section>
+
+<!---Advertisement-->
+
+    <div class="news container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 fade-in-right hover-zoom">
+                <img src="asset/Rectangle.jpg" alt="Neighborhood Image" class="img-fluid rounded-image enhanced-height">
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="news-section fade-in-left hover-shade">
+                    <h3 class="news-title">Neighborhood Committed</h3>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <ul class="news-list">
+                                <li class="home-based"><img src="asset/Ellipse.png" alt="Icon" class="icon"> ZIP code focused</li>
+                                <li class="home-based"><img src="asset/Ellipse.png" alt="Icon" class="icon"> Love for home-based businesses</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <ul class="news-list">
+                                <li class="home-based"><img src="asset/Ellipse.png" alt="Icon" class="icon"> Neighborhood happenings</li>
+                                <li class="home-based"><img src="asset/Ellipse.png" alt="Icon" class="icon"> Free speech</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn btn-warning news-cta btn-SignUp-options">Advertise</button>
+                </div>
+                <div class="news-section mt-4 fade-in-left hover-shade">
+                    <h3 class="news-title">Why Advertise With Us</h3>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <ul class="news-list">
+                                <li><i class="bi bi-check-circle"></i> Get more business</li>
+                                <li><i class="bi bi-check-circle"></i> Be there when neighbors look for you</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <ul class="news-list">
+                                <li><i class="bi bi-check-circle"></i> Easy ad creation</li>
+                                <li><i class="bi bi-check-circle"></i> Affordable</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn btn-warning news-cta btn-SignUp-options">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!---Footer-->
+
+    <footer class="footer news-pop-up-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <img src="asset/Frame.png" alt="YellowZip Logo" class="footer-logo">
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Site Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Agreements</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Terms of Abuse</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Sign-Up</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Neighbor</a></li>
+                        <li><a href="#">Businesses</a></li>
+                        <li><a href="#">Agencies</a></li>
+                        <li><a href="#">Franchisors</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Stay Connected</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><img src="asset/Group.png"  class="footer-facebok"></i> YellowZIP</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2023. YellowZIP All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <!-- Include Bootstrap JS -->
+     <script src="script.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
